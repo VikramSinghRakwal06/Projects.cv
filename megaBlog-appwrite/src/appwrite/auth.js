@@ -22,6 +22,7 @@ export class AuthService{
             return userAccount;
            }
         } catch (error) {
+            console.log('Authservice::createAccount::error',error);
             throw error;
         }
     }
@@ -30,6 +31,7 @@ export class AuthService{
         try {
            return await this.account.createEmailPasswordSession(email,password);
         } catch (error) {
+            console.log('authservice::login::error',error);
             throw error;
         }
     }
