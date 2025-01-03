@@ -27,10 +27,10 @@ export class Service{
         } 
     }
 
-    async updatePost(slug,{title, featuredImage, userId,status}){
+    async updatePost(slug,{title, featuredImage, content,status}){
         try {
             return await this.databases.updateDocument(conf.appwriteDatabaseId,conf.appwriteCollectionId,{
-                title, status, userId, content,
+                title, status, featuredImage, content,
             })
         } catch (error) {
             console.log("Appwrite service::updatePost::error",error);
@@ -58,9 +58,9 @@ export class Service{
             return false
         }
     }
-    async getPosts(queries){
+    async getPosts(queries=[Query.equal("status","active")]){
         try {
-            return await this.databases.listDocuments(conf.appwriteDatabaseId,conf.appwriteCollectionId,[Query.equal("status","active")])
+            return await this.databases.listDocuments(conf.appwriteDatabaseId,conf.appwriteCollectionId,queries,)
         } catch (error) {
             console.log("appwrite service:: getPosts::error",error)
             return false
