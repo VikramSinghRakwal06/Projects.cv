@@ -5,6 +5,7 @@ import Container from "./container/Container";
 import LogoutBtn from "./header/LogoutBtn";
 import Select from './Select'
 import PostCard from "./PostCard";
+import RTE from './RTE'
 export{
     Header,
     Footer,
@@ -12,5 +13,6 @@ export{
     Container,
     LogoutBtn,
     Select,
-    PostCard
+    PostCard,
+    RTE
 }
