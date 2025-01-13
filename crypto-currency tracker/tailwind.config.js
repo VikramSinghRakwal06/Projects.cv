@@ -14,6 +14,9 @@ export default {
       fontFamily:{
         custom:['Poppins','sans-serif'],
       },
+      lineHeight:{
+        cs:'1.5',
+      },
     },
   },
   plugins: [],
