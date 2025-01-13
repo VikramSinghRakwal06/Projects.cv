@@ -11,6 +11,9 @@ export default {
         'color-two': '#1d152f', 
         'color-three': '#002834',
       },
+      fontFamily:{
+        custom:['Poppins','sans-serif'],
+      },
     },
   },
   plugins: [],
