@@ -8,7 +8,7 @@ function NavBar() {
     return (
         <div className='flex justify-between items-center text-[#ddd] border-b-2 border-solid-[#3c3c3c] py-5 px-[5%]'>
             <div className='flex items-center '><img src={crypto} alt="logo" className='invert w-[max(6vw,40px)] px-3 brightness-150 contrast-125' width='70px' />
-            <h1 className='text-2xl font-bold'>Crypto-Tracker</h1></div>
+            <h2 className='text-2xl font-bold'>Crypto-Tracker</h2></div>
             
             <ul className='flex gap-10 list-none cursor-pointer'>
                 <li>Home</li>
