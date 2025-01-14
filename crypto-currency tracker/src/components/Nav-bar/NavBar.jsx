@@ -1,10 +1,31 @@
-import React, { useState } from 'react';
-import crypto from '../../assets/crypto.png'
-import arrow from '../../assets/arrow.png'
+import React, { useContext, useState } from 'react';
+import crypto from '../../assets/crypto.png';
+import arrow from '../../assets/arrow.png';
+import { CoinContext } from '../context/CoinContext';
 
 function NavBar() {
-  
- 
+    const {setCurrency}=useContext(CoinContext);
+    const currencyHandler = (e)=>{
+        switch(e.target.value){
+            case "usd":{
+            setCurrency({name:'usd', symbol:'$'})
+            break;
+        }
+        case "eur":{
+            setCurrency({name:'eur', symbol:'€'})
+            break;
+        }
+        case "inr":{
+            setCurrency({name:'inr', symbol:'₹'})
+            break;
+        }
+        default:{
+            setCurrency({name:'usd', symbol:'$'})
+            break;
+        }
+    }
+        
+    }
     return (
         <div className='flex justify-between items-center text-[#ddd] border-b-2 border-solid-[#3c3c3c] py-5 px-[5%]'>
             <div className='flex items-center '><img src={crypto} alt="logo" className='invert w-[max(6vw,40px)] px-3 brightness-150 contrast-125' width='70px' />
@@ -17,7 +38,7 @@ function NavBar() {
                 <li>Blog</li>
                
             </ul>
-            <div className='flex items-center gap-[max(2vw,12px)]'><select  className='text-white py-[5px] px-2 border-2 border-solid border-white bg-transparent'>
+            <div className='flex items-center gap-[max(2vw,12px)]'><select  className='text-white py-[5px] px-2 border-2 border-solid border-white bg-transparent'  onChange={currencyHandler}>
                 <option value="usd" className='bg-[#09005c] text-white'>USD</option>
             <option value="eur" className='bg-[#09005c] text-white'>EUR</option>
             <option value="inr" className='bg-[#09005c] text-white'>INR</option>
