@@ -38,7 +38,9 @@ function Home() {
                                <p>{item.name +" - "+item.symbol}
                             </p>
                             </div>
-                            <p>{currency.symbol+ " " + item.current_price}</p>
+                            <p className='pr-[40px]'>{currency.symbol+ " " + item.current_price}</p>
+                            <p>{Math.floor(item.price_change_percentage_24h*100)}</p>
+                            <p>{item.market_cap}</p>
                             </div>
                     ))
                 }
