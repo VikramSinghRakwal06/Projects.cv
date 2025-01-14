@@ -1,6 +1,6 @@
 import React from 'react'
 import NavBar from './components/Nav-bar/NavBar'
-import Home from './pages/home/Home'
+import Home from './components/pages/home/Home'
 
 function App(){
   return (
