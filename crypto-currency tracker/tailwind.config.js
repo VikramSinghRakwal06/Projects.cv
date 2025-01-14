@@ -17,6 +17,9 @@ export default {
       lineHeight:{
         cs:'1.5',
       },
+      screens:{
+        'xs':{'max':'500px'},
+      },
     },
   },
   plugins: [],

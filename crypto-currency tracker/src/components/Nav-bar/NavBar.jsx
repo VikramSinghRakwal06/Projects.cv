@@ -27,11 +27,11 @@ function NavBar() {
         
     }
     return (
-        <div className='flex justify-between items-center text-[#ddd] border-b-2 border-solid-[#3c3c3c] py-5 px-[5%]'>
+        <div className='flex justify-between items-center text-[#ddd] border-b-2 border-solid-[#3c3c3c] py-5 px-[5%] md:px-[8%]'>
             <div className='flex items-center '><img src={crypto} alt="logo" className='invert w-[max(6vw,40px)] px-3 brightness-150 contrast-125' width='70px' />
             <h2 className='text-2xl font-bold'>Crypto-Tracker</h2></div>
             
-            <ul className='flex gap-10 list-none cursor-pointer'>
+            <ul className=' gap-10 list-none cursor-pointer hidden md:flex'>
                 <li>Home</li>
                 <li>Features</li>
                 <li>Pricing</li>
@@ -44,7 +44,7 @@ function NavBar() {
             <option value="inr" className='bg-[#09005c] text-white'>INR</option>
             </select>
             
-            <button className='flex items-center  gap-2.5 py-3 bg-white border-none cursor-pointer rounded-[20px] text-[15px] font-[15px] px-6 text-[#393939]'>SignUp <img src={arrow} alt="" width='13px' /></button></div>
+            <button className='flex items-center  gap-2.5 py-3 bg-white border-none cursor-pointer rounded-[20px] text-[15px] font-[15px] px-6 text-[#393939]'>SignUp <img src={arrow} className='md:w-auto w-3' alt="" width='13px' /></button></div>
         </div>
     );
 }
