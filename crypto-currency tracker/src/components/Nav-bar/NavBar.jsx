@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import crypto from '../../assets/crypto.png';
 import arrow from '../../assets/arrow.png';
 import { CoinContext } from '../context/CoinContext';
-
+import { Link } from 'react-router-dom';
 function NavBar() {
     const {setCurrency}=useContext(CoinContext);
     const currencyHandler = (e)=>{
@@ -28,11 +28,11 @@ function NavBar() {
     }
     return (
         <div className='flex justify-between items-center text-[#ddd] border-b-2 border-solid-[#3c3c3c] py-5 px-[5%] md:px-[8%]'>
-            <div className='flex items-center '><img src={crypto} alt="logo" className='invert w-[max(6vw,40px)] px-3 brightness-150 contrast-125' width='70px' />
+           <Link to={'/'}> <div className='flex items-center '><img src={crypto} alt="logo" className='invert w-[max(6vw,40px)] px-3 brightness-150 contrast-125' width='70px' />
             <h2 className='text-2xl font-bold'>Crypto-Tracker</h2></div>
-            
+            </Link>
             <ul className=' gap-10 list-none cursor-pointer hidden md:flex'>
-                <li>Home</li>
+              <Link to={'/'}> <li>Home</li></Link> 
                 <li>Features</li>
                 <li>Pricing</li>
                 <li>Blog</li>

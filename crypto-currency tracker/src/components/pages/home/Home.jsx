@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { CoinContext } from '../../context/CoinContext';
-
+import { Link } from 'react-router-dom';
 function Home() {
     const {coins, currency}=useContext(CoinContext);
     const [displayCoin, setDisplayCoin]=useState([]);
@@ -47,7 +47,7 @@ function Home() {
                 </div>
                 {
                     displayCoin.slice(0,10).map((item,index)=>(
-                        <div key={index}  className='grid  md:grid-cols-[0.5fr_2fr_1fr_1fr_1.5fr] grid-cols-[0.5fr_3fr_1fr_1fr] py-[15px] px-[20px] items-center border-b border-[#3c3c3c] last:border-none' >
+                        <Link to={`/coin/${item.id}`} key={index}  className='grid  md:grid-cols-[0.5fr_2fr_1fr_1fr_1.5fr] grid-cols-[0.5fr_3fr_1fr_1fr] py-[15px] px-[20px] items-center border-b border-[#3c3c3c] last:border-none' >
                             <p>
                         {item.market_cap_rank}
                             </p>
@@ -60,7 +60,7 @@ function Home() {
                             <p className='text-left'>{currency.symbol+ " " + item.current_price.toLocaleString()}</p>
                             <p className={`text-center ${item.price_change_percentage_24h>0?'text-green-500' : 'text-red-600'}`}>{Math.floor(item.price_change_percentage_24h*10)/100}</p>
                             <p className='text-right hidden md:block'>{currency.symbol}{item.market_cap.toLocaleString()}</p>
-                            </div>
+                            </Link>
                     ))
                 }
             </div>
