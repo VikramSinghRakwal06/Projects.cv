@@ -1,3 +1,5 @@
+
+
 import React, { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { CoinContext } from '../../context/CoinContext';
@@ -23,7 +25,7 @@ const Coin = () => {
   const fetchHistoricalData = async () => {
     try {
       const res = await fetch(
-        `https://api.coingecko.com/api/v3/coins/${coinId}/market_chart?vs_currency=${currency}`
+        ` https://api.coingecko.com/api/v3/coins/${coinId}/market_chart?vs_currency=${currency.name}&days=10&interval=daily`
       );
       if (!res.ok) throw new Error('Failed to fetch historical data');
       const data = await res.json();
@@ -62,3 +64,5 @@ const Coin = () => {
 };
 
 export default Coin;
+
+
