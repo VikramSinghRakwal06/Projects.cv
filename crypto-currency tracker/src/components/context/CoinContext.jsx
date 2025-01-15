@@ -18,7 +18,8 @@ const CoinContextProvider = (props)=>{
             setCoins(data);
             
         } catch (error) {
-            console.log("Unable to fetch the API ")
+            console.log("Unable to fetch the API ");
+           
         }
       
     }

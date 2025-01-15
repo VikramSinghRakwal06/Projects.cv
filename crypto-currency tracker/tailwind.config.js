@@ -11,6 +11,15 @@ export default {
         'color-two': '#1d152f', 
         'color-three': '#002834',
       },
+      animation:{
+        rotate:'rotate 2s linear infinite'
+      },
+      keyframes:{
+        rotate:{
+          '0%': {transform: 'rotate(0deg)'},
+          '100%':{transform: 'rotate(360deg)'}
+        }
+      },
       fontFamily:{
         custom:['Poppins','sans-serif'],
       },
