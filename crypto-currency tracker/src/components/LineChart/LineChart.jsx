@@ -19,7 +19,7 @@ const LineChart = ({ historicalData }) => {
   }, [historicalData]);
 
   return (
-    <div style={{ height: '400px', width: '100%' }}>
+    <div className='pl-[370px] ' style={{ height: '350px', width: '75%' }}>
       <Chart
         chartType="LineChart"
         data={data}
