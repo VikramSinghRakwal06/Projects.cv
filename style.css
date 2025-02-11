@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(70, 70, 158);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 20vh; 
+    
+}
+
+nav{
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(27, 27, 80) ;
+    position: sticky;
+   
+}
+
+#navilist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+#navilist> li> a{
+    text-decoration: none;
+    color: white;
+}
+#navilist> li> a:hover{
+    cursor:pointer;
+    color: rgb(185, 185, 250);
+    font-size: 1.02rem;
+}
+li{
+    padding: 10px;
+}
+h1{
+    font-size: 1.5rem;
+}
+.firstSec{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+    align-items: center;
+   
+}
+.divleft{
+    width: 30%;
+    font-size: 2.5rem;
+   
+ 
+}
+
+.divright {
+    width: 40%;
+    margin-top: 20px;
+}
+img{
+   
+    width: 80%;
+}
+
+.secondSec{
+    font-size: 1.5rem;
+    padding-left: 120px;
+    display: flex;
+    
+    flex-direction: column;
+    height: 80vh;
+    
+    margin: auto;
+}
+
+
+
+
+
+#purple,#element{
+    color: #ac89cc;
+}
+
+#divider{
+    background: #dadadc;
+    border: 0;
+    height: 1px;
+    margin-top: 40px ;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 20px;
+}
+.text-grey{
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+  
+    
+}
+.box1{
+   
+    width: 80vw;
+    height: 2px;
+    background: white;
+    margin: 32px 0;
+    display: flex;
+}
+.verti1{
+    height: 80px;
+    background: white;
+    width: 1.5px;
+   margin-right: 250px;
+}
+
+.top{
+    position: relative;
+    height: 44px;
+    top: -38px;
+    left: -105px;
+    width: 60px;
+}
+
+.title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+    top: 18px;
+    left: -55px;
+    width: 150px;
+}
+
+.desc{
+    font-size: 0.7rem;
+    position: relative;
+    top: 19px;
+    width: 185px;
+    left: -70px;
+}
+.title2{
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+    top: 74px;
+    left: -32px;
+    width: 150px;
+}
+
+    .desc2 {
+        font-size: 0.7rem;
+        position: relative;
+        top: 73px;
+        width: 200px;
+        left: -39px;
+}
+
+.vertwo{
+    margin-left: 100px;
+}
+
+#txt{
+    font-weight: 500;
+}
+.skll{
+    position: relative;
+    top: 65px;
+    left: -61px;
+    width: 250px;
+}
+.head21{
+    position: relative;
+    left: 147px;
+    color: #ac89cc;
+}
+.top2{
+    position: relative;
+    height: 44px;
+    top: -48px;
+    left: 96px;
+    width: 60px;
+}
+.thirdSec{
+    font-size: 1.5rem;
+    padding-left: 120px;
+    display: flex;
+    
+    flex-direction: column;
+    height: auto;
+    
+    margin: auto;
+    
+}
+
+.txtgry-3{
+    font-size: 0.6rem;
+}
+
+#proId{
+    font-size: 1.2rem;
+    color: #ac89cc;
+}
+#proDesc{
+    font-size: 0.8rem;
+    list-style: georgian inside url('/media/examples/rocket.svg');
+}
+#head1{
+    color: #ac89cc;
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+.footer div{
+    margin-top: 80px;
+}
+
+footer {
+    background-color: rgb(27, 27, 80); /* Footer background color */
+    color: white;
+    height: 30vh;
+    position:relative;
+    top: 180px;
+    padding-bottom:60px ;
+}
+.f-rights{
+    align-items: center;
+    justify-content: center;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+ 
+        position: relative;
+        top: 10px;
+}
+#foot a{
+    text-decoration: none;
+    color: white;
+}
+#foot a:hover{
+    cursor:pointer;
+    color: rgb(185, 185, 250);
+    font-size: 1.02rem;
+}
+#ctc{
+    position: relative;
+    top: 24px;
+    left: 81px;
+}
+#ft{
+    position: relative;
+    top: 10px;
+}
